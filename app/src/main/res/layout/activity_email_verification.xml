@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailVerificationActivity">
+
+    <ImageView
+        android:id="@+id/verification_header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="70dp"
+        android:src="@drawable/verification_header" />
+
+    <ImageButton
+        android:id="@+id/verification_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="@drawable/login_button_background"
+        android:elevation="7dp"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_arrow_back_white" />
+
+    <TextView
+        android:id="@+id/verification_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verification_info_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/antipasto_bold"
+        android:text="@string/email_verification_title"
+        android:textColor="@android:color/black"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/verification_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verification_email_tv"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/antipasto_demibold"
+        android:textColor="@android:color/black"
+        android:text="@string/verification_info" />
+
+    <TextView
+        android:id="@+id/verification_email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="@color/colorLightBlue"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="email here" />
+
+    <TextView
+        android:id="@+id/verification_instruction_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verification_email_tv"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/antipasto_demibold"
+        android:textColor="@android:color/black"
+        android:text="@string/verification_instruction"  />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/verification_footer_img"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/verification_footer" />
+
+        <Button
+            android:id="@+id/verification_done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_button_background"
+            android:fontFamily="@font/antipasto_bold"
+            android:text="@string/verification_done"
+            android:textColor="@android:color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

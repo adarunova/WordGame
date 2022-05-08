@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wordgame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".EmailVerificationActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".LobbyActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".JoinGameActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".CreateGameActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".GameActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".GameResultsActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".GameRulesActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+
+        <service
+            android:name=".services.CloseAppService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>

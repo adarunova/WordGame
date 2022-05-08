@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd"
+    tools:context=".FeedbackActivity">
+
+    <ImageView
+        android:id="@+id/feedback_header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="70dp"
+        android:src="@drawable/verification_header" />
+
+    <ImageButton
+        android:id="@+id/feedback_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="@drawable/login_button_background"
+        android:elevation="7dp"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_arrow_back_white" />
+
+    <TextView
+        android:id="@+id/feedback_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/feedback_txt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/antipasto_bold"
+        android:text="@string/feedback_title"
+        android:textColor="@android:color/black"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/feedback_txt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/feedback_bottom_rl"
+        android:layout_below="@+id/feedback_header_img"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/feedback_edittext_background"
+        android:fontFamily="@font/antipasto_demibold"
+        android:padding="20dp"
+        android:hint="@string/feedback_hint"
+        android:textColor="@android:color/black"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        android:elevation="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/feedback_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/verification_footer" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_button_background"
+            android:fontFamily="@font/antipasto_bold"
+            android:text="@string/send_button"
+            android:textColor="@android:color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd"
+    tools:context=".LobbyActivity">
+
+    <ImageButton
+        android:id="@+id/lobby_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="@drawable/login_button_background"
+        android:elevation="7dp"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_arrow_back_white" />
+
+    <ImageView
+        android:id="@+id/login_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/lobby_header" />
+
+    <TextView
+        android:id="@+id/login_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/antipasto_demibold"
+        android:text="@string/lobby_title"
+        android:textColor="#e61b1b1b"
+        android:textSize="35dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lobby_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title_tv"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Game Code"
+                android:fontFamily="@font/antipasto_medium"
+                android:textColor="#000"
+                android:textSize="22dp"/>
+
+
+            <TextView
+                android:id="@+id/lobby_game_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/antipasto_medium"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Players"
+                android:fontFamily="@font/antipasto_medium"
+                android:textColor="#000"
+                android:textSize="22dp"/>
+
+
+            <TextView
+                android:id="@+id/lobby_players_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/antipasto_medium"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lobby_players_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lobby_info_ll"
+        android:layout_marginTop="30dp"
+        android:divider="@null"/>
+
+    <Button
+        android:id="@+id/lobby_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/sign_in_button_background"
+        android:fontFamily="@font/antipasto_bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/lobby_start"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <ProgressBar
+        android:id="@+id/lobby_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

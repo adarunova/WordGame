@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Word Game</string>
+
+    <!-- Login page -->
+    <string name="login_title">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="registration">Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <!-- Registration page -->
+    <string name="registration_title">Sign Up</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="next">Next</string>
+    <string name="exist_account_question">Already have an account?</string>
+    <string name="nickname_empty_exception">Nickname required</string>
+    <string name="nickname_long_exception">Nickname must be no longer than 20 characters long</string>
+    <string name="email_empty_exception">Email required</string>
+    <string name="password_empty_exception">Password is required</string>
+    <string name="password_short_exception">Password must be at least 6 characters long</string>
+    <string name="password_long_exception">Password must be no longer than 20 characters long</string>
+    <string name="symbols_exception">Only characters "a-z", "A-Z", "0-9" are allowed</string>
+    <string name="verification_email_sent">A verification email has been sent to</string>
+
+    <!-- Email verification page -->
+    <string name="email_verification_title">Verification</string>
+    <string name="verification_info">A verification email has been sent to your email:</string>
+    <string name="verification_instruction">Follow the link in the email to verify your email address</string>
+    <string name="verification_done">Done</string>
+
+    <!-- UserUtils exception messages -->
+    <string name="user_empty_nickname_exception">Nickname cannot be an empty string</string>
+    <string name="user_empty_login_exception">Login cannot be an empty string</string>
+    <string name="user_empty_password_exception">Password cannot be an empty string</string>
+
+    <!-- Main screen -->
+    <string name="profile">Profile</string>
+    <string name="create_the_game">Create the game</string>
+    <string name="join_the_game">Join the game</string>
+    <string name="how_to_play">How to play</string>
+
+    <!-- Auth messages -->
+    <string name="login_failed">Login failed</string>
+    <string name="have_not_verify_email">You have not verified your email. Send confirmation email again?</string>
+    <string name="have_not_create_profile">Profile not found</string>
+    <string name="unsuccessful_sign_in">Incorrect password or profile does not exist</string>
+    <string name="network_exception">Network connection error. Check connection</string>
+
+    <!-- Reset password page -->
+    <string name="reset_password_title">Rest Password</string>
+    <string name="reset_info">Enter your account email address:</string>
+    <string name="reset_password">Reset</string>
+    <string name="reset_password_email_sent">A password reset email has been sent to</string>
+    <string name="reset_password_email_sent_failed">Unable to sent reset password email</string>
+
+    <!-- Profile page -->
+    <string name="logout_title">Logout</string>
+    <string name="logout_question">Are you sure you want to logout?</string>
+    <string name="delete_account_title">Delete account</string>
+    <string name="delete_account_question">Are you sure you want to delete your account?</string>
+    <string name="edit_nickname">Edit nickname</string>
+    <string name="edit_password">Edit password</string>
+    <string name="password_change_failed">Password change failed</string>
+    <string name="user_null">Failed to load information from the server</string>
+    <string name="user_deleted">Your account was deleted</string>
+    <string name="user_delete_failed">Failed to delete account</string>
+    <string name="user_update_nickname_failed">Failed to update nickname</string>
+
+    <!-- Yes/No dialog -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Change password dialog -->
+    <string name="cancel">Cancel</string>
+    <string name="new_password_hint">New password</string>
+    <string name="change_password">Change password</string>
+
+    <!-- Feedback page -->
+    <string name="feedback_title">Feedback</string>
+    <string name="send_button">Send</string>
+    <string name="feedback_hint">Enter your feedback here</string>
+    <string name="feedback_empty_exception">Feedback cannot be send because it is empty</string>
+    <string name="feedback_unable_to_sent_exception">Failed to send feedback, please, try again later</string>
+    <string name="feedback_has_been_sent">Feedback has been sent!</string>
+
+    <!-- Join the game page -->
+    <string name="join">Join</string>
+    <string name="game_code">Enter game code here:</string>
+    <string name="game_code_exception">Only characters "A-Z", "0-9" are allowed</string>
+    <string name="game_with_code_does_not_exist">The game with the given code does not exist</string>
+    <string name="max_players_number_exceeded">Maximum number of players exceeded</string>
+    <string name="game_started">Unable to join the game. The game has already started</string>
+
+    <!-- Lobby page -->
+    <string name="lobby_title">Wait for players...</string>
+    <string name="lobby_start">Start</string>
+    <string name="lobby_code">Tell the players this code:</string>
+    <string name="quit_the_game">Quit the game</string>
+    <string name="creator_leaves_game">Are you sure you want to quit the game? It will be deleted for all users</string>
+    <string name="leave_game">Are you sure you want to quit the game?</string>
+    <string name="quit_failed">Failed to quit the game</string>
+    <string name="game_deleted">The game has been deleted by its creator</string>
+
+    <!-- Game exception messages -->
+    <string name="code_generation_exception">Failed to generate game code, please, try again later</string>
+
+
+    <!-- Game Setup Pages -->
+    <string name="round_number">Choose the number of rounds in the game:</string>
+    <string name="seconds_number">Specify the number of seconds for one round:</string>
+    <string name="players_number">Specify the number of players:</string>
+    <string name="game_language">Choose the language:</string>
+    <string name="start_button">Start</string>
+    <string name="next_button">Next</string>
+
+    <!-- Game Activity -->
+    <string name="sec">sec</string>
+    <string name="round">Round</string>
+    <string name="score">Score:</string>
+    <string name="input_text">Input word </string>
+
+    <!-- Word checking messages -->
+    <string name="non_existent_word_exception">There is no such word in the dictionary</string>
+    <string name="incorrect_word_exception">This word does not contain the given sequence of letters</string>
+    <string name="letters_amount_exception">The word must contain more than 3 letters</string>
+    <string name="word_already_input">This word has already been used</string>
+
+    <!-- Game Results Activity -->
+    <string name="results">Results</string>
+    <!-- Rules -->
+    <string name="first_rule_page">In each round of the game you given 3 letters</string>
+    <string name="second_rule_page">During the round, you need to come up with as many words as possible containing all the given letters in the order described</string>
+    <string name="third_rule_page">3 points are awarded for each correct word</string>
+    <string name="fourth_rule_page_1">Word does not start with the first letter</string>
+    <string name="fourth_rule_page_2">There is at least one letter between the first and second letters of the given sequence in the word</string>
+    <string name="fourth_rule_page_3">There is at least one letter between the second and third letters of the given sequence in the word</string>
+    <string name="additional_points">Extra points</string>
+</resources>

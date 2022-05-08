@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Игра в слова</string>
+
+    <!-- Login page -->
+    <string name="login_title">Вход</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="registration">Регистрация</string>
+    <string name="password_hint">Пароль</string>
+
+    <!-- Registration page -->
+    <string name="registration_title">Регистрация</string>
+    <string name="nickname_hint">Никнейм</string>
+    <string name="next">Дальше</string>
+    <string name="exist_account_question">Уже есть аккаунт?</string>
+    <string name="nickname_empty_exception">Введите никнейм</string>
+    <string name="nickname_long_exception">Никнейм должен быть не более 20 символов</string>
+    <string name="email_empty_exception">Введите свой email</string>
+    <string name="password_empty_exception">Введите пароль</string>
+    <string name="password_short_exception">Пароль должен быть не менее 6 символов</string>
+    <string name="password_long_exception">Пароль должен быть не более 20 символов</string>
+    <string name="symbols_exception">Допустимы только следующие символы: "a–z", "A–Z", "0–9"</string>
+    <string name="verification_email_sent">Письмо для подтверждения e-mail было отправлено на</string>
+
+    <!-- Email verification page -->
+    <string name="email_verification_title">Подтвеждение</string>
+    <string name="verification_info">Письмо для подтверждения электронной почты отправлено на почту:</string>
+    <string name="verification_instruction">Перейдите по ссылке в письме, чтобы подтвердить адрес электронной почты</string>
+    <string name="verification_done">Готово</string>
+
+    <!-- UserUtils exception messages -->
+    <string name="user_empty_nickname_exception">Никнейм не может быть пустой строкой</string>
+    <string name="user_empty_login_exception">Логин не может быть пустой строкой</string>
+    <string name="user_empty_password_exception">Пароль не может быть пустой строкой</string>
+    <string name="network_exception">Ошибка подключения к сети. Проверьте подключение</string>
+
+    <!-- Main screen -->
+    <string name="profile">Профиль</string>
+    <string name="create_the_game">Создать игру</string>
+    <string name="join_the_game">Войти в игру</string>
+    <string name="how_to_play">Правила игры</string>
+
+    <!-- Auth messages -->
+    <string name="login_failed">Невозможно войти</string>
+    <string name="have_not_verify_email">E-mail не подтверждён. Отправить e-mail повторно?</string>
+    <string name="have_not_create_profile">Профиль не найден</string>
+    <string name="unsuccessful_sign_in">Неверный пароль или профиль не существует</string>
+
+    <!-- Reset password page -->
+    <string name="reset_password_title">Восстановить Пароль</string>
+    <string name="reset_info">Введите адрес электронной почты вашей учетной записи:</string>
+    <string name="reset_password">Восстановить</string>
+    <string name="reset_password_email_sent">Письмо для восстановления пароля было отправлено на почту</string>
+    <string name="reset_password_email_sent_failed">Невозможно отправить письмо для фосстановления пароля</string>
+
+    <!-- Profile page -->
+    <string name="logout_title">Выход</string>
+    <string name="logout_question">Вы точно хотите выйти из аккаунта?</string>
+    <string name="delete_account_title">Удалить аккаунт</string>
+    <string name="delete_account_question">Вы точно хотите удалить аккаунт?</string>
+    <string name="edit_nickname">Изменить никнейм</string>
+    <string name="edit_password">Изменить пароль</string>
+    <string name="password_change_failed">Неудалось сменить пароль</string>
+    <string name="user_null">Не удалось загрузить информацию с сервера</string>
+    <string name="user_deleted">Пользователь удалён</string>
+    <string name="user_delete_failed">Не удалось удалить аккаунт</string>
+    <string name="user_update_nickname_failed">Не удалось изменить никнейм</string>
+
+    <!-- Yes/No dialog -->
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <!-- Change password dialog -->
+    <string name="cancel">Отмена</string>
+    <string name="new_password_hint">Новый пароль</string>
+    <string name="change_password">Изменить пароль</string>
+
+    <!-- Feedback page -->
+    <string name="feedback_title">Обратная связь</string>
+    <string name="send_button">Отправить</string>
+    <string name="feedback_hint">Введите свой отзыв</string>
+    <string name="feedback_empty_exception">Отзыв не может быть отправлен, потому что он пустой</string>
+    <string name="feedback_unable_to_sent_exception">Не удалось отправить отзыв, попробуйте позже</string>
+    <string name="feedback_has_been_sent">Отзыв отправлен!</string>
+
+    <!-- Join the game page -->
+    <string name="join">Войти</string>
+    <string name="game_code">Введите код игры:</string>
+    <string name="game_code_exception">Допустимы только следующие символы: "A–Z", "0–9"</string>
+    <string name="game_with_code_does_not_exist">Игра с заданным кодом не существует</string>
+    <string name="max_players_number_exceeded">Максимальное количество игроков превышено</string>
+    <string name="game_started">Невозможно войти в игру. Игра уже началась</string>
+
+    <!-- Lobby page -->
+    <string name="lobby_title">Ждём игроков…</string>
+    <string name="lobby_start">Запуск</string>
+    <string name="lobby_code">Сообщите игрокам следующий код:</string>
+    <string name="quit_the_game">Выйти из игры</string>
+    <string name="creator_leaves_game">Вы уверены, что хотите выйти из игры? Она будет удалена для всех пользователей</string>
+    <string name="leave_game">Вы уверены, что хотите выйти из игры?</string>
+    <string name="quit_failed">Не удалось выйти из игры</string>
+    <string name="game_deleted">Игра была удалена ее создателем</string>
+
+    <!-- Game exception messages -->
+    <string name="code_generation_exception">Невозможно сгенерировать код игры. Попробуйте позже</string>
+
+    <!-- Game Setup Pages -->
+    <string name="round_number">Выберете число раундов в игре:</string>
+    <string name="seconds_number">Укажите количество секунд для одного раунда:</string>
+    <string name="players_number">Укажите число игроков:</string>
+    <string name="game_language">Выберете язык:</string>
+    <string name="start_button">Начать</string>
+    <string name="next_button">Далее</string>
+
+    <!-- Game Activity -->
+    <string name="sec"> сек</string>
+    <string name="round">Раунд </string>
+    <string name="score">Очки: </string>
+    <string name="input_text">Введите слово </string>
+
+    <!-- Word checking messages -->
+    <string name="non_existent_word_exception">В словаре не существует данное слово</string>
+    <string name="incorrect_word_exception">Это слово не содержит заданной последовательности букв</string>
+    <string name="letters_amount_exception">Слово должно содержать более 3 букв</string>
+    <string name="word_already_input">Это слово уже использвано</string>
+
+    <!-- Game Results Activity -->
+    <string name="results">Результаты</string>
+
+    <!-- Rules -->
+    <string name="first_rule_page">В каждом раунде игры появляются 3 буквы</string>
+    <string name="second_rule_page">За время раунда нужно придумать как можно больше слов, содержащих все заданные буквы в описанном порядке</string>
+    <string name="third_rule_page">За каждое верное слово начисляется 3 очка</string>
+    <string name="fourth_rule_page_1">Слово начинается не на первую букву</string>
+    <string name="fourth_rule_page_2">Между первой и второй буквами из последовательности в слове стоит хотя бы одна буква</string>
+    <string name="fourth_rule_page_3">Между второй и третьей буквами из последовательности в слове стоит хотя бы одна буква</string>
+    <string name="additional_points">Дополнительные баллы</string>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/lobby_header"/>
+
+
+    <ImageButton
+        android:id="@+id/profile_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_button_background"
+        android:elevation="7dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_arrow_back_white"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/profile_circle_tv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/profile_back_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/antipasto_medium"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:background="@drawable/profile_user_icon"
+        android:shadowColor="#fff"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/profile_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_circle_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/profile_email_background"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/antipasto_demibold"
+        android:textColor="#6b6b6b"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_email_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/nickname_title_tv"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/antipasto_medium"
+                android:text="@string/nickname_hint"
+                android:textColor="#082648"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/nickname_title_tv"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_nickname_background"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/antipasto_medium"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/password_title_tv"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/antipasto_medium"
+                android:text="@string/password_hint"
+                android:textColor="#082648"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/password_title_tv"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_password_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_nickname_background"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/antipasto_medium"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="\u22c6\u22c6\u22c6\u22c6\u22c6\u22c6\u22c6"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profile_exit_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#10b6c4"
+        app:pressedTranslationZ="12dp"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_power_off_white"
+        app:fabCustomSize="55dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profile_delete_account_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_exit_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#3283ed"
+        app:borderWidth="0dp"
+        app:fabCustomSize="45dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_delete_white"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profile_logout_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_toStartOf="@+id/profile_exit_fab"
+        android:backgroundTint="#1bb9f2"
+        app:borderWidth="0dp"
+        app:fabCustomSize="45dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_logout"
+        android:layout_marginEnd="15dp"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/profile_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>

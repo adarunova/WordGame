@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/registration_header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/register_header" />
+
+
+    <TextView
+        android:id="@+id/register_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/antipasto_bold"
+        android:text="@string/registration_title"
+        android:textColor="@android:color/white"
+        android:textSize="35dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/nickname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/email_layout"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/top_right_view_background"
+        android:elevation="7dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/registration_nickname_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@+id/nickname_tv"
+            android:background="@android:color/white"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:text="@string/nickname_hint"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_left_view_background"
+        android:elevation="7dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/registration_email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/email_tv"
+            android:background="@android:color/white"
+            android:drawableEnd="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:inputType="textEmailAddress"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:text="@string/email_hint"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/email_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/right_view_background"
+        android:elevation="7dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/registration_password_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@+id/password_tv"
+            android:background="@android:color/white"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:inputType="textPassword"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/antipasto_medium"
+            android:text="@string/password_hint"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login_registration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sign_in_button_background"
+        android:fontFamily="@font/antipasto_bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/register_exist_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registration_footer_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:textColor="#e4282828"
+        android:fontFamily="@font/antipasto_demibold"
+        android:text="@string/exist_account_question"/>
+
+    <ImageView
+        android:id="@+id/registration_footer_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/register_footer" />
+</RelativeLayout>

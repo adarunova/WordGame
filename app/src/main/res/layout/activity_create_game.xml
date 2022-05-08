@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGameActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/create_game_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/create_game_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:elevation="7dp"
+        android:padding="5dp"
+        android:background="@drawable/login_button_background"
+        android:src="@drawable/ic_arrow_back_white"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/login_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/login_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="-0.1"/>
+
+    <Button
+        android:id="@+id/create_game_indicator_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:fontFamily="@font/antipasto_bold"
+        android:background="@drawable/sign_in_button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/create_game_viewpager"
+        app:layout_constraintEnd_toEndOf="@+id/create_game_viewpager"
+        app:layout_constraintStart_toStartOf="@+id/create_game_viewpager"
+        app:layout_constraintTop_toTopOf="@+id/create_game_viewpager"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.9"/>
+
+    <LinearLayout
+        android:id="@+id/create_game_indicator"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/create_game_viewpager"
+        app:layout_constraintEnd_toEndOf="@+id/create_game_viewpager"
+        app:layout_constraintStart_toStartOf="@+id/create_game_viewpager"
+        app:layout_constraintTop_toTopOf="@+id/create_game_viewpager"
+        app:layout_constraintVertical_bias="0.9">
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/create_game_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
