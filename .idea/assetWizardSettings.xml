@@ -91,8 +91,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\AsyaRita\WordGame\app\src\main\res\drawable\icon_launcher_foreground.xml" />
-                                                <entry key="scalingPercent" value="81" />
+                                                <entry key="imagePath" value="C:\Users\AsyaRita\Downloads\icon_launcher_foreground_main_png.png" />
+                                                <entry key="scalingPercent" value="63" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -124,8 +124,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launcher_background_main" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground_main" />
+                                      <entry key="outputName" value="ic_launcher_final" />
                                     </map>
                                   </option>
                                 </PersistentState>
